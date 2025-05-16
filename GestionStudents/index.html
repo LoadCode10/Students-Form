@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <title>Students Manager</title>
+</head>
+<body>
+  <div class="container">
+    <header class="my-header">
+      <h1 class="display-6">
+        <i class="fa-solid fa-chalkboard-user text-primary"></i>My<span class="text-primary">Students </span>App
+      </h1>
+      <input type="text" class="form-control form-search" id="filter" placeholder="Search C.N.E...">
+    </header>
+    <div class="all-fields">
+      <form class="student-form">
+        <div class="student-div1">
+          <div class="form-group">
+            <label for="title">Nom</label>
+            <input type="text" id="nom" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="title">Prenom</label>
+            <input type="text" id="prenom" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="title">C.N.E</label>
+            <input type="text" id="cne" class="form-control">
+          </div>
+        </div>
+        <div class="student-div2">
+          <div class="form-group">
+            <label for="title">Niveau</label>
+            <input type="text" id="niveau" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="title">Spécialité</label>
+            <select class="form-control" name="specialite" id="specialite">
+              <option value="">Click pour choisir...</option>
+              <option value="SMA">SCIENCES MATHÉMATIQUES A.</option>
+              <option value="SMB">SCIENCES MATHÉMATIQUES B</option>
+              <option value="S.Eco">SCIENCES ÉCONOMIQUES</option>
+              <option value="STE">SCIENCES ET TECHNOLOGIES ÉLECTRIQUES</option>
+              <option value="STM">SCIENCES ET TECHNOLOGIES MÉCANIQUES</option>
+              <option value="S.Phy">SCIENCES PHYSIQUES</option>
+            </select>
+            <!--<input type="text" id="specialite" class="form-control">-->
+          </div>
+          <div class="form-group">
+            <label for="title">Note/20</label>
+            <input type="text" id="note" class="form-control">
+          </div>
+        </div>
+        <input type="submit" value="Add Student" class="btn btn-primary form-control mt-4 submit-btn">
+      </form>
+      
+    </div>
+    <table class="table table-striped mt-4">
+      <thead>
+        <tr>
+          <th>Nom</th>
+          <th>Prénom</th>
+          <th>C.N.E</th>
+          <th>Niveau</th>
+          <th>Spécialité</th>
+          <th>Note</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody class="students-list">
+       
+      </tbody>
+    </table>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
